@@ -284,6 +284,7 @@ sys.vendor.shutdown.waittime=500
 
 # Skia
 renderthread.skia.reduceopstasksplitting=true
+debug.hwui.skia_atrace_enabled=false
 
 # USB
 vendor.usb.diag.func.name=diag
