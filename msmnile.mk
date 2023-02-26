@@ -398,6 +398,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
