@@ -30,6 +30,12 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 USE_DEX2OAT_DEBUG := false
 
+KERNEL_PATH := $(COMMON_PATH)/prebuilts
+
+# Copy Kernel
+KERNEL_IMAGE := device/xiaomi/sm8150-common/prebuilts/Image
+PRODUCT_COPY_FILES += $(KERNEL_IMAGE):kernel
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
