@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Camera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+#$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
