@@ -294,6 +294,12 @@ on property:vendor.post_boot.parsed=1
     write /proc/irq/8/smp_affinity_list 2
     write /proc/irq/518/smp_affinity_list 1
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 on property:vendor.dcvs.prop=1
    start dcvs-sh
 
