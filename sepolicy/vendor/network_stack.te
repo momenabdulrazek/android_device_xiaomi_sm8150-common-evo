@@ -1,0 +1,1 @@
+allow network_stack proc_net:file { getattr open r_file_perms };

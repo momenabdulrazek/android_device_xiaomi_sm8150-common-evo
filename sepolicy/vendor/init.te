@@ -16,3 +16,9 @@ allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 # Allow init to read and write to sysfs_vibrator
 allow init sysfs_vibrator:dir search;
 allow init sysfs_vibrator:file rw_file_perms;
+
+allow init sysfs_thermal:file { setattr };
+allow init vendor_sysfs_kgsl:file { setattr };
+allow init vendor_sysfs_kgsl:lnk_file { read };
+allow init vendor_sysfs_kgsl_max_gpuclk:file { setattr };
+allow init hal_fingerprint_default:process { ptrace };

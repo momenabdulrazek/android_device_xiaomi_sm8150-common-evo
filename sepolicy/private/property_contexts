@@ -1,3 +1,16 @@
+# Audio
+audio.soundtrigger.debug.urser_id               u:object_r:exported_vendor_audio_prop:s0
+audio_hal.in_period_size                        u:object_r:exported_vendor_audio_prop:s0
+
+# Camera
+camera.                                         u:object_r:exported_vendor_camera_prop:s0
+ro.camera.res.fmq.size                          u:object_r:exported_vendor_camera_prop:s0
+ro.camera.req.fmq.size                          u:object_r:exported_vendor_camera_prop:s0
+
+# FP
+persist.sys.fp.                                 u:object_r:exported_vendor_fingerprint_prop:s0
+persist.vendor.fpc.                             u:object_r:exported_vendor_fingerprint_prop:s0
+
 # Global
 ro.boot.hwc              u:object_r:exported_default_prop:s0
 ro.build.flavor          u:object_r:exported_default_prop:s0
@@ -9,13 +22,13 @@ ro.product.mod_device    u:object_r:build_prop:s0
 # Graphics
 ro.gfx.driver.1          u:object_r:graphics_config_prop:s0
 
-# IMEI
-persist.radio.imei             u:object_r:deviceid_prop:s0
-persist.radio.meid             u:object_r:deviceid_prop:s0
-ro.ril.miui.imei               u:object_r:deviceid_prop:s0
-ro.ril.oem.imei                u:object_r:deviceid_prop:s0
-ro.ril.oem.meid                u:object_r:deviceid_prop:s0
-ro.vendor.oem.                 u:object_r:deviceid_prop:s0
+persist.radio.imei             u:object_r:exported_vendor_deviceid_prop:s0
+persist.radio.meid             u:object_r:exported_vendor_deviceid_prop:s0
+ro.ril.miui.imei               u:object_r:exported_vendor_deviceid_prop:s0
+ro.ril.oem.imei                u:object_r:exported_vendor_deviceid_prop:s0
+ro.ril.oem.meid                u:object_r:exported_vendor_deviceid_prop:s0
+ro.vendor.oem.                 u:object_r:exported_vendor_deviceid_prop:s0
+
 
 # MIUI
 persist.sensor.sardisable               u:object_r:exported_system_prop:s0
@@ -36,3 +49,15 @@ persist.input.velocitytracker.          u:object_r:exported_system_prop:s0
 renderthread.skia.                      u:object_r:exported_system_prop:s0
 ro.input.resampling                     u:object_r:exported_system_prop:s0
 viewroot.profile_rendering              u:object_r:exported_system_prop:s0
+
+# Sensor
+persist.sensor.                                 u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.data.                                  u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.entry.                                 u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.debug.                                 u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.verbose.                               u:object_r:exported_vendor_sensors_prop:s0
+
+# Thermal
+sys.thermal.                                    u:object_r:exported_vendor_thermal_normal_prop:s0
+vendor.sys.thermal.                             u:object_r:exported_vendor_thermal_normal_prop:s0
+persist.sys.thermal.config                      u:object_r:exported_vendor_thermal_normal_prop:s0
