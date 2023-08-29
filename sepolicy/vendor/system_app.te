@@ -5,6 +5,8 @@ allow system_app vendor_sysfs_battery_supply:dir { search };
 allow system_app vendor_sysfs_battery_supply:file { getattr open read };
 r_dir_file(system_app, vendor_sysfs_battery_supply)
 
+r_dir_file(platform_app, sysfs_msm_subsys)
+
 binder_call(system_app, hal_power_default)
 
 allow system_app zygote:unix_stream_socket getopt;
@@ -13,3 +15,5 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 allow system_app proc_vmallocinfo:file r_file_perms;
 allow system_app sysfs_zram:file r_file_perms;
 allow system_app sysfs_zram:dir search;
+allow platform_app sysfs_msm_subsys:dir { search };
+allow platform_app sysfs_msm_subsys:file { read open getattr };
